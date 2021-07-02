@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build'){
             steps{
-                bat premake5 vs2019
+                bat WindowsBuild.bat
             }
         }
 
