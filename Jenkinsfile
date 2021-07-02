@@ -1,12 +1,21 @@
 pipeline {
     agent any
+
     stages {
-        stage('Build'){
-            steps{
-                bat echo HelloWorld
-                bat WindowsBuild.bat
+        stage('Build') {
+            steps {
+                echo 'Building..'
             }
         }
-
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
 }
