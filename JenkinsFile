@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build'){
             steps{
+                bat echo HelloWorld
                 bat WindowsBuild.bat
             }
         }
