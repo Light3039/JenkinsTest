@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'premake5:'
                 premake5 gmake
-
             }
         }
         stage('Test') {
