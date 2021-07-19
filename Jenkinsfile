@@ -4,17 +4,21 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'premake5:'
+                premake5 gmake
+
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'make:'
+                make
+                echo 'made:'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Bruh'
             }
         }
     }
