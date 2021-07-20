@@ -15,7 +15,7 @@ pipeline
                 sh 'chmod +x LinuxBuild.sh'
 
                 sh 'echo "Building... LinuxBuild"'
-                sh 'LinuxBuild.sh'
+                sh '/var/jenkins_home/workspace/JenkinsTest3/LinuxBuild.sh'
                 
                 sh 'echo "Building... Built"'
             }
