@@ -7,17 +7,18 @@ pipeline
         {
             steps 
             {
-                bash 'echo "directory information:"'
-                bash 'pwd'
-                bash 'ls'
+                sh 'echo "directory information:"'
+                sh 'pwd'
+                sh 'ls'
 
-                bash 'echo "Building... chmod"'
-                bash 'chmod +x LinuxBuild.sh'
+                sh 'echo "Building... chmod"'
+                sh 'chmod +x LinuxBuild.sh'
 
-                bash 'echo "Building... LinuxBuild"'
-                bash '/var/jenkins_home/workspace/JenkinsTest3/LinuxBuild.sh'
+                sh 'echo "Building... LinuxBuild"'
+                sh 'premake5 --help'
+                sh '/var/jenkins_home/workspace/JenkinsTest3/LinuxBuild.sh'
                 
-                bash 'echo "Building... Built"'
+                sh 'echo "Building... Built"'
             }
         }
     }
