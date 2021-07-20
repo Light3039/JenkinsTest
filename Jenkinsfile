@@ -1,23 +1,21 @@
-pipeline {
+pipeline 
+{
     agent any
 
-    stages {
-        stage('Build') {
-            steps {
+    stages 
+    {
+        stage('Build') 
+        {
+            steps 
+            {
                 echo 'premake5:'
                 premake5 gmake
-            }
-        }
-        stage('Test') {
-            steps {
+                echo 'sleeping:'
+                sleep(500)
+                echo 'slept:'
                 echo 'make:'
                 make
                 echo 'made:'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Bruh'
             }
         }
     }
