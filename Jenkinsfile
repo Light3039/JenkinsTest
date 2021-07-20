@@ -11,6 +11,8 @@ pipeline
                 sh 'pwd'
                 sh 'ls'
 
+                sh 'sudo chown -R jenkins:jenkins /var/jenkins_home/workspace/JenkinsTest/'
+
                 sh 'echo "Building... chmod"'
                 sh 'chmod +x /var/jenkins_home/workspace/JenkinsTest/LinuxBuild.sh'
 
@@ -20,6 +22,6 @@ pipeline
                 
                 sh 'echo "Building... Built"'
             }
-        }
+        }   
     }
 }
