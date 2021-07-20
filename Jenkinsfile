@@ -7,7 +7,7 @@ pipeline
         {
             steps 
             {
-                sh 'echo "directory information:'
+                sh 'echo "directory information:"'
                 sh 'pwd'
                 sh 'ls'
 
