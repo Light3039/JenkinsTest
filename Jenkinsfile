@@ -15,8 +15,8 @@ pipeline
                 sh 'chmod +x /var/jenkins_home/workspace/JenkinsTest/LinuxBuild.sh'
 
                 sh 'echo "Building... LinuxBuild"'
-                sh 'sudo /var/jenkins_home/workspace/JenkinsTest/premake5 --help'
-                sh 'sudo /var/jenkins_home/workspace/JenkinsTest/LinuxBuild.sh'
+                sh '/var/jenkins_home/workspace/JenkinsTest/premake5 --help'
+                sh '/var/jenkins_home/workspace/JenkinsTest/LinuxBuild.sh'
                 
                 sh 'echo "Building... Built"'
             }
