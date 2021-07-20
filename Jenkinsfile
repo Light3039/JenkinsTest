@@ -12,11 +12,11 @@ pipeline
                 sh 'ls'
 
                 sh 'echo "Building... chmod"'
-                sh 'chmod +x /var/jenkins_home/workspace/JenkinsTest3/LinuxBuild.sh'
+                sh 'chmod +x /var/jenkins_home/workspace/JenkinsTest/LinuxBuild.sh'
 
                 sh 'echo "Building... LinuxBuild"'
-                sh '/var/jenkins_home/workspace/JenkinsTest3/premake5 --help'
-                sh '/var/jenkins_home/workspace/JenkinsTest3/LinuxBuild.sh'
+                sh '/var/jenkins_home/workspace/JenkinsTest/premake5 --help'
+                sh '/var/jenkins_home/workspace/JenkinsTest/LinuxBuild.sh'
                 
                 sh 'echo "Building... Built"'
             }
