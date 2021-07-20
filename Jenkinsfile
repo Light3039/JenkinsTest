@@ -1,21 +1,20 @@
 pipeline 
 {
     agent any
-
     stages 
     {
         stage('Build') 
         {
             steps 
             {
-                echo 'premake5:'
-                premake5 gmake
-                echo 'sleeping:'
-                sleep(500)
-                echo 'slept:'
-                echo 'make:'
-                make
-                echo 'made:'
+                sh echo 'premake5:'
+                sh premake5 gmake
+                sh echo 'sleeping:'
+                sh sleep(500)
+                sh echo 'slept:'
+                sh echo 'make:'
+                sh make
+                sh echo 'made:'
             }
         }
     }
