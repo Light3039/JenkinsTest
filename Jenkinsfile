@@ -7,14 +7,12 @@ pipeline
         {
             steps 
             {
-                sh 'echo premake5'
-                sh 'premake5 gmake'
-                sh 'echo sleeping'
-                sh 'sleep(500)'
-                sh 'echo slept'
-                sh 'echo make'
-                sh 'make'
-                sh 'echo made'
+                sh 'echo "Building... chmod"'
+                sh 'chmod +x LinuxBuild.sh'
+
+                sh 'echo "Building... LinuxBuild"'
+                sh 'LinuxBuild.sh'
+                sh 'echo "Building... Built"'
             }
         }
     }
