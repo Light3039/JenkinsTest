@@ -7,6 +7,9 @@ pipeline
         {
             steps 
             {
+                sh 'echo "ls:..."'
+                sh 'ls'
+
                 sh 'echo "Building... chmod"'
                 sh 'chmod +x LinuxBuild.sh'
 
