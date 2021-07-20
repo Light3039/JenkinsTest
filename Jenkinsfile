@@ -7,7 +7,8 @@ pipeline
         {
             steps 
             {
-                sh 'echo "ls:..."'
+                sh 'echo "directory information:'
+                sh 'pwd'
                 sh 'ls'
 
                 sh 'echo "Building... chmod"'
